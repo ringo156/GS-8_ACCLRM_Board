@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name High_range_accelerometer-rescue)(type Legacy)(uri ${KIPRJMOD}/High_range_accelerometer-rescue.lib)(options "")(descr ""))
+)
