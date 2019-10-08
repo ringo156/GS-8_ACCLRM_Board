@@ -20,13 +20,13 @@ U 1 1 5D81EFC1
 P 5950 4450
 F 0 "U5" H 5950 3400 60  0000 C CNN
 F 1 "CY8C5868LTI-LP039" H 5950 3550 60  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-68-1EP_8x8mm_P0.4mm_EP5.2x5.2mm_ThermalVias" H 5950 4450 60  0001 C CNN
+F 2 "KUTKiCad_footprint:Cypress_QFN-68_EP_8x8_Pitch0.4mm" H 5950 4450 60  0001 C CNN
 F 3 "" H 5950 4450 60  0001 C CNN
 	1    5950 4450
 	1    0    0    -1  
 $EndComp
 $Comp
-L KUT_Connector:KRC_PSoCWriter P1
+L High_range_accelerometer-rescue:KRC_PSoCWriter-KUT_Connector P1
 U 1 1 5D89CA7D
 P 2100 5350
 F 0 "P1" H 2377 5408 60  0000 L CNN
@@ -592,17 +592,6 @@ F 1 "LT1761-5" H 2600 1326 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 2600 1375 50  0001 C CNN
 F 3 "http://cds.linear.com/docs/en/datasheet/1761sff.pdf" H 2600 1050 50  0001 C CNN
 	1    2600 1050
-	1    0    0    -1  
-$EndComp
-$Comp
-L High_range_accelerometer-rescue:LT1965xDD-3.3-KUTKiCad_symbol U2
-U 1 1 5D902B11
-P 2400 1950
-F 0 "U2" H 2400 2215 50  0000 C CNN
-F 1 "LT1965xDD-3.3" H 2400 2124 50  0000 C CNN
-F 2 "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.5mm_EP1.66x2.38mm" H 2400 1950 50  0001 C CNN
-F 3 "" H 2400 1950 50  0001 C CNN
-	1    2400 1950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1541,22 +1530,18 @@ Text GLabel 7400 4450 2    50   Input ~ 0
 Flash-MOSI
 Text GLabel 7400 4550 2    50   Input ~ 0
 Flash-MISO
-Text GLabel 7400 4250 2    50   Input ~ 0
+Text GLabel 4550 3150 0    50   Input ~ 0
 Sensor-CS
-Text GLabel 7400 3950 2    50   Input ~ 0
+Text GLabel 7400 4250 2    50   Input ~ 0
 Sensor-CLK
-Text GLabel 7400 4050 2    50   Input ~ 0
+Text GLabel 4550 3050 0    50   Input ~ 0
 Sensor-MOSI
 Text GLabel 7400 4150 2    50   Input ~ 0
 Sensor-MISO
-Text GLabel 4550 3050 0    50   Input ~ 0
+Text GLabel 4550 3250 0    50   Input ~ 0
 INT1
-Text GLabel 4550 3150 0    50   Input ~ 0
+Text GLabel 4550 3350 0    50   Input ~ 0
 INT2
-Wire Wire Line
-	7400 3950 7300 3950
-Wire Wire Line
-	7300 4050 7400 4050
 Wire Wire Line
 	7400 4150 7300 4150
 Wire Wire Line
@@ -1588,10 +1573,6 @@ Wire Wire Line
 Wire Wire Line
 	7850 2900 7850 3050
 Wire Wire Line
-	7850 3050 7300 3050
-Wire Wire Line
-	7300 3150 8100 3150
-Wire Wire Line
 	8100 3150 8100 2900
 NoConn ~ 3000 1050
 NoConn ~ 7300 3250
@@ -1613,12 +1594,8 @@ NoConn ~ 4600 4550
 NoConn ~ 4600 4650
 NoConn ~ 4600 4750
 NoConn ~ 4600 4850
-NoConn ~ 4600 3250
-NoConn ~ 4600 3350
 NoConn ~ 4600 3450
 NoConn ~ 4600 3550
-NoConn ~ 4600 3650
-NoConn ~ 4600 3750
 Wire Wire Line
 	8050 6150 8050 6200
 Wire Wire Line
@@ -1632,7 +1609,7 @@ Connection ~ 1450 950
 Wire Wire Line
 	1450 950  1350 950 
 $Comp
-L My_Library:H3LIS331DLTR U6
+L High_range_accelerometer-rescue:H3LIS331DLTR-My_Library U6
 U 1 1 5D9891C7
 P 9450 1500
 F 0 "U6" H 9900 1550 50  0000 L CNN
@@ -1686,4 +1663,33 @@ F 3 "~" H 2050 7200 50  0001 C CNN
 	1    2050 7200
 	1    0    0    -1  
 $EndComp
+$Comp
+L KUTKiCad_symbol:LT1965xDD-3.3 U2
+U 1 1 5D9D14F8
+P 2400 1950
+F 0 "U2" H 2400 2215 50  0000 C CNN
+F 1 "LT1965xDD-3.3" H 2400 2124 50  0000 C CNN
+F 2 "KUTKiCad_footprint:DFN-8-1EP_3x3mm_P0.65mm_EP1.7x2.56mm" H 2400 1950 50  0001 C CNN
+F 3 "" H 2400 1950 50  0001 C CNN
+	1    2400 1950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7300 3950
+NoConn ~ 7300 4050
+Wire Wire Line
+	4550 3350 4600 3350
+Wire Wire Line
+	4600 3250 4550 3250
+Text GLabel 7850 3050 3    50   Input ~ 0
+LED_G_1
+Text GLabel 8100 3150 3    50   Input ~ 0
+LED_G_2
+Text GLabel 4550 3750 0    50   Input ~ 0
+LED_G_2
+Text GLabel 4550 3650 0    50   Input ~ 0
+LED_G_1
+Wire Wire Line
+	4550 3650 4600 3650
+Wire Wire Line
+	4600 3750 4550 3750
 $EndSCHEMATC
