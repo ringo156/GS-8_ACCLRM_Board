@@ -28,12 +28,12 @@ $EndComp
 $Comp
 L High_range_accelerometer-rescue:KRC_PSoCWriter-KUT_Connector P1
 U 1 1 5D89CA7D
-P 2100 5500
-F 0 "P1" H 2377 5558 60  0000 L CNN
-F 1 "KRC_PSoCWriter" H 2377 5452 60  0000 L CNN
-F 2 "KUTKiCad_footprint:JST_JQ_05JQ-BT_1x05_P2.5mm_Vertical" H 2325 5500 60  0001 C CNN
-F 3 "" H 2325 5500 60  0000 C CNN
-	1    2100 5500
+P 2200 5200
+F 0 "P1" H 2477 5258 60  0000 L CNN
+F 1 "KRC_PSoCWriter" H 2477 5152 60  0000 L CNN
+F 2 "KUTKiCad_footprint:JST_JQ_05JQ-BT_1x05_P2.5mm_Vertical" H 2425 5200 60  0001 C CNN
+F 3 "" H 2425 5200 60  0000 C CNN
+	1    2200 5200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -72,30 +72,30 @@ $EndComp
 $Comp
 L power:GND #PWR03
 U 1 1 5D8A2416
-P 1550 5900
-F 0 "#PWR03" H 1550 5650 50  0001 C CNN
-F 1 "GND" H 1555 5727 50  0000 C CNN
-F 2 "" H 1550 5900 50  0001 C CNN
-F 3 "" H 1550 5900 50  0001 C CNN
-	1    1550 5900
+P 1650 5600
+F 0 "#PWR03" H 1650 5350 50  0001 C CNN
+F 1 "GND" H 1655 5427 50  0000 C CNN
+F 2 "" H 1650 5600 50  0001 C CNN
+F 3 "" H 1650 5600 50  0001 C CNN
+	1    1650 5600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1550 5900 1550 5400
+	1650 5600 1650 5100
 Wire Wire Line
-	1550 5400 1900 5400
-Text GLabel 1850 5500 0    50   Input ~ 0
+	1650 5100 2000 5100
+Text GLabel 1950 5200 0    50   Input ~ 0
 XRESS
-Text GLabel 1850 5600 0    50   Input ~ 0
+Text GLabel 1950 5300 0    50   Input ~ 0
 SCLK
-Text GLabel 1850 5700 0    50   Input ~ 0
+Text GLabel 1950 5400 0    50   Input ~ 0
 SDATA
 Wire Wire Line
-	1850 5700 1900 5700
+	1950 5400 2000 5400
 Wire Wire Line
-	1900 5600 1850 5600
+	2000 5300 1950 5300
 Wire Wire Line
-	1850 5500 1900 5500
+	1950 5200 2000 5200
 Text GLabel 4550 4150 0    50   Input ~ 0
 XRESS
 Text GLabel 4550 4050 0    50   Input ~ 0
@@ -1231,7 +1231,7 @@ Wire Wire Line
 	3200 4100 3250 4100
 Wire Wire Line
 	3250 4200 3200 4200
-NoConn ~ 1900 5300
+NoConn ~ 2000 5000
 $Comp
 L Device:Crystal Y2
 U 1 1 5D8E00BD
@@ -1501,45 +1501,45 @@ $EndComp
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5D9A09FB
-P 2050 6600
-F 0 "H1" H 2150 6646 50  0000 L CNN
-F 1 "MountingHole" H 2150 6555 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 2050 6600 50  0001 C CNN
-F 3 "~" H 2050 6600 50  0001 C CNN
-	1    2050 6600
+P 700 5000
+F 0 "H1" H 800 5046 50  0000 L CNN
+F 1 "MountingHole" H 800 4955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 700 5000 50  0001 C CNN
+F 3 "~" H 700 5000 50  0001 C CNN
+	1    700  5000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 5D9A0A93
-P 2050 6800
-F 0 "H2" H 2150 6846 50  0000 L CNN
-F 1 "MountingHole" H 2150 6755 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 2050 6800 50  0001 C CNN
-F 3 "~" H 2050 6800 50  0001 C CNN
-	1    2050 6800
+P 700 5200
+F 0 "H2" H 800 5246 50  0000 L CNN
+F 1 "MountingHole" H 800 5155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 700 5200 50  0001 C CNN
+F 3 "~" H 700 5200 50  0001 C CNN
+	1    700  5200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H3
 U 1 1 5D9A0B13
-P 2050 7000
-F 0 "H3" H 2150 7046 50  0000 L CNN
-F 1 "MountingHole" H 2150 6955 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 2050 7000 50  0001 C CNN
-F 3 "~" H 2050 7000 50  0001 C CNN
-	1    2050 7000
+P 700 5400
+F 0 "H3" H 800 5446 50  0000 L CNN
+F 1 "MountingHole" H 800 5355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 700 5400 50  0001 C CNN
+F 3 "~" H 700 5400 50  0001 C CNN
+	1    700  5400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 5D9A0B95
-P 2050 7200
-F 0 "H4" H 2150 7246 50  0000 L CNN
-F 1 "MountingHole" H 2150 7155 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 2050 7200 50  0001 C CNN
-F 3 "~" H 2050 7200 50  0001 C CNN
-	1    2050 7200
+P 700 5600
+F 0 "H4" H 800 5646 50  0000 L CNN
+F 1 "MountingHole" H 800 5555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 700 5600 50  0001 C CNN
+F 3 "~" H 700 5600 50  0001 C CNN
+	1    700  5600
 	1    0    0    -1  
 $EndComp
 NoConn ~ 7300 3950

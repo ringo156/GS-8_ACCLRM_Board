@@ -1,4 +1,4 @@
-update=2019/09/25 18:28:15
+update=2019/10/12 11:34:43
 version=1
 last_client=kicad
 [general]
@@ -34,7 +34,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=./
+PlotDirectoryName=SVG/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
