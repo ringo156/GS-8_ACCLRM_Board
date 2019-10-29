@@ -808,45 +808,17 @@ $EndComp
 Wire Wire Line
 	8700 2200 8700 2150
 Wire Wire Line
-	9350 1950 9350 2200
-Connection ~ 9350 2200
-Wire Wire Line
-	9350 2200 8700 2200
-Wire Wire Line
 	9500 2250 9500 2200
-Wire Wire Line
-	9350 2200 9450 2200
-Wire Wire Line
-	9450 1950 9450 2200
-Connection ~ 9450 2200
-Wire Wire Line
-	9450 2200 9500 2200
 Wire Wire Line
 	9550 1950 9550 2200
 Wire Wire Line
 	9550 2200 9500 2200
 Connection ~ 9500 2200
-Wire Wire Line
-	9550 2200 9650 2200
-Wire Wire Line
-	9650 2200 9650 1950
 Connection ~ 9550 2200
 Wire Wire Line
 	9750 1950 9750 2200
 Wire Wire Line
-	9750 2200 9650 2200
-Connection ~ 9650 2200
-Wire Wire Line
-	9550 1050 9550 950 
-Wire Wire Line
-	9550 950  9650 950 
-Wire Wire Line
 	10000 950  10000 900 
-Wire Wire Line
-	9650 1050 9650 950 
-Connection ~ 9650 950 
-Wire Wire Line
-	9650 950  10000 950 
 Wire Wire Line
 	10000 950  10200 950 
 Wire Wire Line
@@ -1490,7 +1462,7 @@ U 1 1 5D9891C7
 P 9450 1500
 F 0 "U6" H 9900 1550 50  0000 L CNN
 F 1 "H3LIS331DLTR" H 9450 1450 50  0000 L CNN
-F 2 "Package_LGA:LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y" H 9400 900 50  0001 C CNN
+F 2 "my_footprint:LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y_handsoldering" H 9400 900 50  0001 C CNN
 F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/3e/48/02/c7/a4/e6/41/bb/DM00053090.pdf/files/DM00053090.pdf/jcr:content/translations/en.DM00053090.pdf" H 11200 900 50  0001 C CNN
 	1    9450 1500
 	1    0    0    -1  
@@ -1780,4 +1752,22 @@ Wire Wire Line
 	7300 3750 7400 3750
 Wire Wire Line
 	7400 3650 7300 3650
+Wire Wire Line
+	9700 1050 9700 950 
+Connection ~ 9700 950 
+Wire Wire Line
+	9700 950  10000 950 
+Wire Wire Line
+	9500 1050 9500 950 
+Wire Wire Line
+	9500 950  9600 950 
+Wire Wire Line
+	9600 1050 9600 950 
+Connection ~ 9600 950 
+Wire Wire Line
+	9600 950  9700 950 
+Wire Wire Line
+	8700 2200 9500 2200
+Wire Wire Line
+	9550 2200 9750 2200
 $EndSCHEMATC
